@@ -124,20 +124,20 @@ p {
 }
 
 .img1{
-    background-image: url('/images/rsz_selfie.jpg');
+    background-image: url('images/rsz_selfie.jpg');
     
 }
 
 .img2{
-    background-image: url('/images/rsz_gameday.jpg');
+    background-image: url('images/rsz_gameday.jpg');
 }
 
 .img3{
-    background-image: url('/images/rsz_dogs.jpg');
+    background-image: url('images/rsz_dogs.jpg');
 }
 
 .img4{
-    background-image: url('/images/rsz_pisa.jpg');
+    background-image: url('images/rsz_pisa.jpg');
 }
 
 a.skip{
