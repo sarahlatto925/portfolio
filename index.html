@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+       <title> Sarah's Personal Website</title>
+       <meta charset = 'utf-8'>
+       <link rel='stylesheet' type='text/css' href ='css/html5reset.css'>
+       <link rel='stylesheet' type='text/css' href='css/style.css'>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <img src='images/logo.png' alt='logo' id='logo' class = 'responsive'>
+            <a class = "skip" href='#skip'>Skip To Main Content</a>
+            <nav>
+                <ul class = 'nav-bar'>
+                    <li class = 'nav current'><a href='index.html'>All About Me</a></li>
+                    <li class = 'nav'><a href='movies.html'>Movie Page</a></li>
+                    <li class = 'nav'><a href='foods.html'>Food Page</a></li>
+                    <li class = 'nav'><a href='music2.html'>Music Page</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class = "about" id='skip' tabindex="0">
+            <div class = 'text-section'>
+                <h1> All About Sarah Latto</h1>
+            </div>
+
+            <div class = 'img1 responsive'> </div>
+
+            <div class = 'text-section'>
+                <h1>Welcome to my page! My name is Sarah Latto and I am a junior at the Univeristy of Michigan.</h1>
+            </div>
+
+            <div class = 'img2 responsive'> </div>
+
+            <div class='text-section'>
+                <h1>I am 20 years old. I love my two dogs, Cooper and Tessa.</h1>
+            </div>
+
+            <div class = 'img3 responsive'> </div>
+
+            <div class ='text-section'>
+                <h1>I love to travel... I was very excited to go abroad next semester, but with everything going on in the world right now, I have decided to postpone this until my senior year!</h1>
+            </div>
+
+            <div class = 'img4 responsive'> </div>
+            <div class='contact-form'>
+                <form action="https://formspree.io/f/xqkgbrzl" method="POST" id = 'contact'>
+                  <h2> Leave feedback here! </h2>
+                  <fieldset>
+                    <label for='firstname'> First name: </label><br>
+                      <input type = 'text' id ='firstname' name = 'firstname' placeholder = 'First name' required>
+                    <br>
+                    <br>
+                    <label for='lastname'>Last name:</label><br>
+                      <input type = 'text' id = 'lastname' name = 'lastname' placeholder = 'Last name' required>
+                    <br><br>
+                    <label for= 'email'>Email: </label><br>
+                      <input type = 'text' id= 'email' name = 'email' placeholder ='Email' required>
+                    <br><br>
+                    <label for='feedback'>Feedback:</label><br>
+                      <textarea placeholder= 'Type your feedback about my webpage here...' id = 'feedback' required>
+                      </textarea>
+                    <br><br>
+                    <button name = 'submit' type = 'submit' value = 'Contact Me' id = 'submit'>Submit!</button>
+                  </fieldset>
+                </form>
+            </div>
+
+        </main>
+        <footer>
+            <h2>University of Michigan School of Information &copy; Sarah Latto</h2>
+        </footer>
+    </body>
+</html>

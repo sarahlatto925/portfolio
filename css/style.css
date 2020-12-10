@@ -1,0 +1,607 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    background-color: #EDC7B7;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background: #EEE2DC;
+    border-bottom: 0.1875em solid #BAB2B5;
+    align-content: center;
+    text-align: center;
+}
+
+#logo{
+  display:inline-block;
+  margin: 0 auto;
+}
+
+footer{
+  background: #AC3B61;
+}
+
+h1 {
+    font-size: 1.5625em;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#contact h2, footer h2{
+  font-size: 1.5625em;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-align: center;
+  font-weight: bold;
+}
+
+.mainguy{
+  background-color: white;
+}
+
+.movieheader{
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #123C69;
+}
+
+iframe{
+  background-color: white;
+}
+
+.movieparagraph {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #AC3361;
+}
+
+.movie-container1 p, .album-container2 p {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #AC3361;
+}
+
+.food-container h1{
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #AC3361;
+}
+
+h2 {
+    font-size: 1.4375em;
+    font-family: 'Lato', sans-serif;
+    color: #123C69;
+    text-align: center;
+    position: relative;
+}
+
+p {
+    font-size: 1.25em;
+    font-family: 'Lato', sans-serif;
+    color: #AC3B61;
+    text-align: center;
+    padding-top: 0.2em;
+    display: block;
+}
+
+*:focus{
+    border: 0.125em solid #000000;
+}
+
+.text-section, .img1, .img2, .img3, .img4{
+    background-color: #AC3361;
+    padding: 1.25em 2.8125em;
+    margin: 2.1875em; 
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    /*
+    min-height: 100%;
+    height: 100%;
+    */
+}
+
+.img1, .img2, .img3, .img4{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+    min-height: 30em;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: auto;
+}
+
+.img1{
+    background-image: url('/images/rsz_selfie.jpg');
+    
+}
+
+.img2{
+    background-image: url('/images/rsz_gameday.jpg');
+}
+
+.img3{
+    background-image: url('/images/rsz_dogs.jpg');
+}
+
+.img4{
+    background-image: url('/images/rsz_pisa.jpg');
+}
+
+a.skip{
+    background: white;
+    left: 0%;
+    padding: 0.375em;
+    position: absolute;
+    top: -2.5em;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+a.skip:focus{
+    top: 1.25em;
+    color: black;
+    text-decoration-style: solid;
+}
+
+/* NAV BAR */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+ul.nav-bar{
+  list-style-type: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li.nav a{
+  display: inline-block;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #AC3361;
+    width: 100%;
+}
+
+li.nav a:hover, a:focus {
+    color: #123C69; 
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+.current {
+  border: solid 2px #123C69;
+}
+
+li.nav a:active{
+  text-decoration: dotted;
+}
+
+.food-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 9fr;
+    background-color: #EDC7B7;
+    grid-template-areas:
+      'pizza'
+      'sushi'
+      'burger'
+      'mac'
+      'omelette'
+      'nachos'
+      'cake'
+      'pasta'
+      'oreos';
+    grid-gap: .2rem;
+}
+
+
+.movie-container1{
+   display: grid;
+   background-color: #EDC7B7;
+  grid-template-columns: 1fr;
+    grid-template-rows: 10fr;
+    grid-template-areas:
+      'step-brothers'
+      'fight-club'
+      'the-other-guys'
+      'kill-bill'
+      'avengers'
+      'django'
+      'get-out'
+      'dark-knight'
+      'inglourious'
+      'superbad';
+    grid-gap: .2rem;
+}
+
+.album-container2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10fr;
+    background-color: #EDC7B7;
+    grid-template-areas:
+      'blonde'
+      'wwafawdwg'
+      'ctrl'
+      'tdf'
+      'co'
+      'flowerboy'
+      'Swimming'
+      'mbdtf'
+      'jcole'
+      'anti';
+    grid-gap: .2rem;
+}
+
+.cardFlip{
+  position: relative;
+}
+
+.card{
+  width: 100%;
+  height: 100%;
+  position: static;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+
+.card:focus-within .front{
+  transform: rotateY(180deg);
+}
+
+
+.front {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #EDC7B7;
+  color: #AC3B61;
+  z-index: -1;
+}
+
+.back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #BAB2B5;
+  color: #AC3B61;
+  transform: rotateY(180deg);
+}
+.back h3{
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  color: #123C69;
+  vertical-align: center;
+}
+
+.albumtext{
+  padding-top: auto;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.responsive{
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.food-img, .music-img{
+  height: 400px;
+  width: 400px;
+
+}
+
+.cover{
+  z-index: -1;
+}
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#contact-form {
+  display: block;
+  text-align: center;
+}
+
+#contact-area {
+  justify-content: center;
+  display: inline-block;
+    min-width: 50em;
+    width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+#contact{
+  background: #AC3B61;
+  padding: 2em;
+  margin: 5em 0;
+
+}
+
+#contact h3 {
+  display: block;
+  color: #EEE2DC;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+fieldset{
+  border: medium 3em #123C69 !important;
+  margin: 0 0 1em;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact-area input, #contact-area textarea{
+  width: 100%;
+  border: 3em solid #BAB2B5;
+  background: white;
+  margin: 0 0 1em;
+  padding: 2 em;
+}
+
+#contact-area textarea {
+    height: 12em;
+    width: 31.25em;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+    border: 0.125em solid #AC3B61;
+}
+
+#contact-button[type = 'submit']{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    margin: 0 0 1em;
+    padding: 1 em;
+}
+
+/* LOGO */
+@-webkit-keyframes logo_wiggle{
+    from {width: 25px;}
+    to {width: 420px;}
+}
+  
+@keyframes logo_wiggle{
+    from {width: 25px;}
+    to {width: 420px;}
+} 
+  
+#logo{
+    animation-name: logo_wiggle;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    width:400px;
+    height: 200px;
+}
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion){
+    #logo{
+      animation: none;
+    }
+    html{
+        scroll-behavior: auto; 
+    }
+  
+    .skip a{
+      -webkit-transition: none; 
+      transition: none;        
+     }
+  
+    header{
+      background-attachment: initial;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+  .food-container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      'pizza sushi'
+      'burger mac'
+      'omelette nachos'
+      'cake pasta'
+      'oreos';
+  }
+
+  .food-img{
+    height: 400px;
+    width: 500px;
+  }
+
+  .music-img{
+    height: 500px;
+    width: 500px;
+  }
+
+  .movie-container1{
+   grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      'step-brothers fight-club'
+      'the-other-guys kill-bill'
+      'avengers django'
+      'get-out dark-knight'
+      'inglourious superbad';
+  }
+
+  .album-container2{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      'blonde wwafawdwg'
+      'ctrl tdf'
+      'co flowerboy'
+      'Swimming mbdtf'
+      'jcole anti';
+}
+
+
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+
+  li.nav a{
+    font-size: 1.2em;
+  }
+
+  .img1{
+    background-image: url('/images/selfie.jpg');
+    object-fit: cover;
+    
+}
+
+.img2{
+    background-image: url('/images/gameday.JPG');
+}
+
+.img3{
+    background-image: url('/images/dogs.JPG');
+}
+
+.img4{
+    background-image: url('/images/pisa.jpg');
+}
+
+#logo{
+  width: 500px;
+  height: 250px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+  .food-container{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    'pizza sushi burger'
+    'mac omelette nachos'
+    'cake pasta oreos';
+  }
+  .food-img{
+    height: 500px;
+    width: 600px;
+  }
+
+  .music-img{
+    height: 600px;
+    width: 600px;
+  }
+
+  .movie-container1{
+   grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      'step-brothers fight-club the-other-guys'
+      'kill-bill avengers django'
+      'get-out dark-knight inglourious'
+      'superbad';
+}
+
+  .album-container2{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      'blonde wwafawdwg ctrl'
+      'tdf co flowerboy'
+      'Swimming mbdtf jcole'
+      'anti';
+}
+
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+
+  li.nav a{
+    font-size: 1.5em;
+  }
+
+  .img1{
+    background-image: url('/images/selfie.jpg');
+    object-fit: cover;
+    
+}
+
+.img2{
+    background-image: url('/images/gameday.JPG');
+}
+
+.img3{
+    background-image: url('/images/dogs.JPG');
+}
+
+.img4{
+    background-image: url('/images/pisa.jpg');
+}
+
+#logo{
+  width: 600px;
+  height: 300px;
+}
+}
