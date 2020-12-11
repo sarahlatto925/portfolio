@@ -449,7 +449,7 @@ fieldset{
   
 #logo{
     animation-name: logo_wiggle;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: 1;
     width:400px;
     height: 200px;
